@@ -522,7 +522,7 @@ class Clipper extends CustomClipper<Path> {
 Future getCurrentWeather(Location location) async {
   Weather weather;
   String city = location.city;
-  String apiKey = "965ec8c752a72918604e7b2fa8d1d6ea";
+  String apiKey = "KEY";
   var url =
       "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric";
 
@@ -537,7 +537,7 @@ Future getCurrentWeather(Location location) async {
 
 Future getForecast(Location location) async {
   Forecast forecast;
-  String apiKey = "965ec8c752a72918604e7b2fa8d1d6ea";
+  String apiKey = "KEY";
   String lat = location.lat;
   String lon = location.lon;
   var url =
